@@ -29,7 +29,7 @@ html{
 /* resuable code */
 
 .container{
-    height: 100vh;
+    height: 100;
 }
 
 img{
@@ -112,6 +112,10 @@ color: var(--black);
 
 }
 
+.menu{
+    display: none;
+}
+
 
 
 /* hero-section-start */
@@ -119,15 +123,22 @@ color: var(--black);
 
 .hero-section{
 margin-top: 10rem;
+margin: auto;
+padding: 4rem;
+margin-bottom: 4rem;
 }
+.left-hero{
+    width: 50%;
+}
+
 
 .left-hero img{
   border-radius: .2rem;
   width:65%;
-  height: 70vh;
 
-  margin-left: 10%;
-  object-fit: cover;
+
+  margin-left: 0;
+ 
 
 
 
@@ -139,12 +150,12 @@ margin-top: 10rem;
 }
 
 .right-hero{
-    width: 40%;
+    width: 50%;
     display:flex;
     justify-content:baseline;
     align-items: baseline;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .right-hero h1{
@@ -167,7 +178,7 @@ margin-top: 10rem;
  
 }
 .email-icon{
-    font-size: 1rem;
+    font-size: 3rem;
    
 }
 
@@ -183,6 +194,9 @@ border: none;
     border: 1px solid var(--black);
     background-color: var(--white);
     padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -195,7 +209,7 @@ border: none;
     flex-direction: column;
     gap: 4rem;
 
-    margin-top: 15vh;
+    margin-top: 0;
 
  
 }
@@ -247,15 +261,15 @@ border: none;
 
 .feature-section{
 
-    /* height: 100vh; */
-    /* margin-top: 70vh; */
+    /* height: 100; */
+    /* margin-top: 70; */
     padding: 5rem;
 
     display:flex;
     justify-content:center;
     align-items: center;
     flex-direction: row;
-  margin: 10rem 0 10rem 0;
+  margin: 0;
 
   animation-duration: 2s;
   animation-name: slidein;
@@ -400,7 +414,7 @@ border: none;
 
 footer{
     background-color: #10181D;
-    height: 60vh;
+    height: 60;
     margin-top: 10%;
 }
 
@@ -480,4 +494,157 @@ footer{
     font-size: 1.5rem;
     list-style: none;
    
+}
+
+
+
+@media only screen and (max-width:600px){
+nav{
+    padding: 1rem;
+}
+    .check{
+        display: none;
+    }
+    .list-item{
+        display: none;
+    }
+
+
+    .hero-section{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+    .left-hero img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .right-hero{
+        width: 100%;
+        gap: 3rem;
+    }
+    .right-hero h1{
+        font-size: 4rem;
+    }
+
+  .email-icon{
+    font-size: 2rem
+  }
+
+  .email{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+.data-text{
+    margin-top: 5rem;
+}
+.data-text h2{
+    width: 100%;
+    margin-left: 0;
+    
+}
+
+.business-data{
+    flex-direction: column;
+    gap: 3rem;
+}
+.actual-business-data p{
+    margin-top: 1rem;
+}
+
+.feautre-header h2 {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 5rem 0;
+    padding: 2rem;
+}
+
+.feature-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: unset;
+    flex-direction: column-reverse;
+    margin: 0;
+    animation-duration: 2s;
+    animation-name: slidein;
+    gap: 2rem;
+
+}
+
+.left{
+    width: 100%;
+    margin-top: 3rem;
+}
+.right{
+    width: 100%;
+    height: unset;
+    margin: 0;
+}
+.flip{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.cards-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+
+}
+.cards-header h2{
+    font-size: 2rem;
+    width: 100%;
+
+
+}
+.cards-header p{
+    width: 100%;
+
+    font-size: 1.3rem;
+}
+.cards{
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    padding: 1rem;
+ gap: 4rem;
+
+}
+.card img{
+   width: 100%;
+ 
+}
+.card{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+ width: 100%;
+ /* border: 2px solid red; */
+}
+.card h3{
+    
+}
+.footer-bottom{
+flex-wrap: wrap;
+gap: 2rem;
+
+}
+.footer-bottom h2{
+    font-size: 2rem;
+}
+.menu{
+    display: block;
+    font-size: 4rem;
+    color: #fff;
+
+}
 }
