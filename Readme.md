@@ -31,4 +31,4 @@
 🔁 Update comes in future 
 
 
-🔗[Live Link](https://jovial-paletas-cc2b01.netlify.app/)
+🔗[Live Link]([https://jovial-paletas-cc2b01.netlify.app/](https://sunny-cendol-65125a.netlify.app/))
